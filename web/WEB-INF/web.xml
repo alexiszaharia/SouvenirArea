@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AfisareCatalog</servlet-name>
+        <servlet-class>managementProduse.AfisareCatalog</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetaliiProdus</servlet-name>
+        <servlet-class>managementProduse.DetaliiProdus</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Comanda</servlet-name>
+        <servlet-class>managementProduse.Comanda</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AfisareCatalog</servlet-name>
+        <url-pattern>/AfisareCatalog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetaliiProdus</servlet-name>
+        <url-pattern>/DetaliiProdus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Comanda</servlet-name>
+        <url-pattern>/Comanda</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
